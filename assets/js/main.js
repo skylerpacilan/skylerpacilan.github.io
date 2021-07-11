@@ -137,6 +137,24 @@
     }
   });
 
+    // Testimonials carousel (uses the Owl Carousel library)
+  $(".tasks-carousel").owlCarousel({
+    autoplay: true,
+    dots: true,
+    loop: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 1
+      },
+      900: {
+        items: 2
+      }
+    }
+  });
+
   // Init AOS
   $(window).on('load', function() {
     AOS.init({
